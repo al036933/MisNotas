@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">MisNotas</string>
+
+    <!-- Texts for tabs -->
+    <string name="tab_grades">Notas</string>
+    <string name="tab_add">Suma</string>
+    <string name="tab_avg">Promedio</string>
+    <string name="tab_max_min">Máximo y Mínimo</string>
+
+    <!-- Texts for subjects -->
+    <string name="subject_maths">Matemáticas</string>
+    <string name="subject_philo">Historia de la Filosofía</string>
+    <string name="subject_history">Historia de España</string>
+    <string name="subject_cs">Informática</string>
+
+    <!-- Generic -->
+    <string name="grades_addition">Suma de Notas</string>
+    <string name="grades_average">Promedio</string>
+    <string name="grades_max">Nota Máxima</string>
+    <string name="grades_min">Nota Mínima</string>
+</resources>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintGuide_percent="0.6"/>
+
+    <TextView
+        android:id="@+id/subject_maths"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/TextAppearance.Material3.HeadlineSmall"
+        android:gravity="end"
+        android:padding="16dp"
+        android:text="@string/subject_maths"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="?attr/textInputOutlinedExposedDropdownMenuStyle"
+        android:padding="16dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/subject_maths"
+        app:layout_constraintBottom_toBottomOf="@id/subject_maths">
+
+        <AutoCompleteTextView
+            android:id="@+id/cb_maths"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/subject_philo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/TextAppearance.Material3.HeadlineSmall"
+        android:gravity="end"
+        android:padding="16dp"
+        android:text="@string/subject_philo"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/subject_maths" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="?attr/textInputOutlinedExposedDropdownMenuStyle"
+        android:padding="16dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/subject_philo"
+        app:layout_constraintBottom_toBottomOf="@id/subject_philo">
+
+        <AutoCompleteTextView
+            android:id="@+id/cb_philo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/subject_history"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/TextAppearance.Material3.HeadlineSmall"
+        android:gravity="end"
+        android:padding="16dp"
+        android:text="@string/subject_history"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/subject_philo" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="?attr/textInputOutlinedExposedDropdownMenuStyle"
+        android:padding="16dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/subject_history"
+        app:layout_constraintBottom_toBottomOf="@id/subject_history">
+
+        <AutoCompleteTextView
+            android:id="@+id/cb_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/subject_cs"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/TextAppearance.Material3.HeadlineSmall"
+        android:gravity="end"
+        android:padding="16dp"
+        android:text="@string/subject_cs"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/subject_history" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="?attr/textInputOutlinedExposedDropdownMenuStyle"
+        android:padding="16dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/subject_cs"
+        app:layout_constraintBottom_toBottomOf="@id/subject_cs">
+
+        <AutoCompleteTextView
+            android:id="@+id/cb_cs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
